@@ -1,0 +1,10 @@
+c:\users\aherrera\documents\visual studio 2017\Projects\DevRandomizer\DevRandomizer\bin\Debug\netcoreapp1.1\DevRandomizer.deps.json
+c:\users\aherrera\documents\visual studio 2017\Projects\DevRandomizer\DevRandomizer\bin\Debug\netcoreapp1.1\DevRandomizer.runtimeconfig.json
+c:\users\aherrera\documents\visual studio 2017\Projects\DevRandomizer\DevRandomizer\bin\Debug\netcoreapp1.1\DevRandomizer.runtimeconfig.dev.json
+c:\users\aherrera\documents\visual studio 2017\Projects\DevRandomizer\DevRandomizer\bin\Debug\netcoreapp1.1\DevRandomizer.dll
+c:\users\aherrera\documents\visual studio 2017\Projects\DevRandomizer\DevRandomizer\bin\Debug\netcoreapp1.1\DevRandomizer.pdb
+c:\users\aherrera\documents\visual studio 2017\Projects\DevRandomizer\DevRandomizer\obj\Debug\netcoreapp1.1\DevRandomizer.csprojResolveAssemblyReference.cache
+c:\users\aherrera\documents\visual studio 2017\Projects\DevRandomizer\DevRandomizer\obj\Debug\netcoreapp1.1\DevRandomizer.csproj.CoreCompileInputs.cache
+c:\users\aherrera\documents\visual studio 2017\Projects\DevRandomizer\DevRandomizer\obj\Debug\netcoreapp1.1\DevRandomizer.AssemblyInfo.cs
+c:\users\aherrera\documents\visual studio 2017\Projects\DevRandomizer\DevRandomizer\obj\Debug\netcoreapp1.1\DevRandomizer.dll
+c:\users\aherrera\documents\visual studio 2017\Projects\DevRandomizer\DevRandomizer\obj\Debug\netcoreapp1.1\DevRandomizer.pdb
