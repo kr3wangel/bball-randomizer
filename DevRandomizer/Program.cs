@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 
 namespace DevRandomizer
 {
@@ -8,13 +9,17 @@ namespace DevRandomizer
     {
         static void Main(string[] args)
         {
-			Console.WriteLine("------------------------ How Many Players? -------------------------");
+			var howManyPlayers = "------------------------ How Many Players? -------------------------";
+			var whoIsPlaying = "------------------------ Who's Playin? -------------------------";
+			var randomizedOrder = "------------------------ Randomized Order -------------------------";
+
+			Console.WriteLine(howManyPlayers);
 
 			int numberOfPlayers = Convert.ToInt32(Console.ReadLine());
 
 			Console.WriteLine();
 			Console.WriteLine();
-			Console.WriteLine("------------------------ Who's Playin? -------------------------");
+			Console.WriteLine(whoIsPlaying);
 
 			string[] playersArray = new string[numberOfPlayers];
 
@@ -23,29 +28,55 @@ namespace DevRandomizer
 				playersArray[i] = Console.ReadLine();
 			}
 
-
-			List<string> list = playersArray.ToList();
-
-
 			Console.WriteLine();
 			Console.WriteLine();
-			Console.WriteLine("------------------------ Randomized Order -------------------------");
+			Console.WriteLine(randomizedOrder);
 
 
-			string playerList = string.Join(", ", playersArray);
+			var pList = new List<string>(playersArray);
+			pList.Shuffle();
 
-			if (playerList.Contains("angel, matt"))
+			var ballers = string.Join(", ", pList.GetRange(0, playersArray.Length));
+
+			if (ballers.Contains("angel, matt"))
 			{
-				Console.WriteLine("uh oh, Matt is screwed");
+				Console.WriteLine("Random Order is: {0}", ballers);
+				Console.WriteLine("uh oh, Matt is screwed. Try again.");
+				pList.Shuffle(); //TODO: not reshuffle not working
+				Console.WriteLine("Second Re-Roll Order is: {0}", ballers);
 			}
-
-			Console.WriteLine(playerList);
-
-			// maybe use random numbers to pick out of the array indexes to build the random list?
-			//var random = new Random().Next(1, 10).ToString();
-			//Console.WriteLine("random number= {0}", random);
+			else
+			{
+				Console.WriteLine("Random Order is: {0}", ballers);
+			}
 
 			Console.ReadLine();
 		}
     }
+
+	public static class ThreadSafeRandom
+	{
+		[ThreadStatic] private static Random Local;
+
+		public static Random ThisThreadsRandom
+		{
+			get { return Local ?? (Local = new Random(unchecked(Environment.TickCount * 31 + Thread.CurrentThread.ManagedThreadId))); }
+		}
+	}
+
+	static class MyExtensions
+	{
+		public static void Shuffle<T>(this IList<T> list)
+		{
+			int n = list.Count;
+			while (n > 1)
+			{
+				n--;
+				int k = ThreadSafeRandom.ThisThreadsRandom.Next(n + 1);
+				T value = list[k];
+				list[k] = list[n];
+				list[n] = value;
+			}
+		}
+	}
 }
