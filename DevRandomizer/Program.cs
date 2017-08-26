@@ -41,9 +41,12 @@ namespace DevRandomizer
 			if (ballers.Contains("angel, matt"))
 			{
 				Console.WriteLine("Random Order is: {0}", ballers);
+
 				Console.WriteLine("uh oh, Matt is screwed. Try again.");
-				pList.Shuffle(); //TODO: not reshuffle not working
-				Console.WriteLine("Second Re-Roll Order is: {0}", ballers);
+				var reList = new List<string>(playersArray);
+				reList.Shuffle(); //TODO: better way to re-shuffle?
+				var reRolledBallers = string.Join(", ", reList.GetRange(0, playersArray.Length));
+				Console.WriteLine("Second Re-Roll Order is: {0}", reRolledBallers);
 			}
 			else
 			{
