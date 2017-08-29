@@ -10,7 +10,7 @@ namespace DevRandomizer
 		static void Main(string[] args)
 		{
 			var howManyPlayers = "------------------------ How Many Players? -------------------------";
-			var whoIsPlaying = "------------------------ Who's Playin? -------------------------";
+			var whoIsPlaying = "------------------------ Who's Playin? -----------------------------";
 			var randomizedOrder = "------------------------ Randomized Order -------------------------";
 
 			Console.WriteLine(howManyPlayers);
@@ -40,19 +40,22 @@ namespace DevRandomizer
 
 			if (ballers.Contains("angel, matt"))
 			{
-				Console.WriteLine("Random Order is: {0}", ballers);
+				Console.WriteLine("Random Order: \n{0}", ballers);
 
-				Console.WriteLine("uh oh, Matt is screwed. Try again.");
+				Console.WriteLine("uh oh, Matt is screwed. Try again.\n");
 				var reList = new List<string>(playersArray);
 				reList.Shuffle(); //TODO: better way to re-shuffle?
 				var reRolledBallers = string.Join(", ", reList.GetRange(0, playersArray.Length));
-				Console.WriteLine("Second Re-Roll Order is: {0}", reRolledBallers);
+				Console.WriteLine("Second Re-Roll Order: \n{0}", reRolledBallers);
 			}
 			else
 			{
-				Console.WriteLine("Random Order is: {0}", ballers);
+				Console.WriteLine("Random Order: \n{0}", ballers);
 			}
 
+			Console.WriteLine();
+			Console.WriteLine();
+			Console.WriteLine("------------------------ Press enter to exit ----------------------");
 			Console.ReadLine();
 		}
 	}

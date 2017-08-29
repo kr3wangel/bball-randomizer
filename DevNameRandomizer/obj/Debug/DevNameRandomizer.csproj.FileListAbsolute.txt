@@ -4,3 +4,10 @@ c:\users\aherrera\documents\visual studio 2017\Projects\DevNameRandomizer\DevNam
 c:\users\aherrera\documents\visual studio 2017\Projects\DevNameRandomizer\DevNameRandomizer\obj\Debug\DevNameRandomizer.csproj.CoreCompileInputs.cache
 c:\users\aherrera\documents\visual studio 2017\Projects\DevNameRandomizer\DevNameRandomizer\obj\Debug\DevNameRandomizer.exe
 c:\users\aherrera\documents\visual studio 2017\Projects\DevNameRandomizer\DevNameRandomizer\obj\Debug\DevNameRandomizer.pdb
+C:\Code\bball-randomizer\DevNameRandomizer\bin\Debug\DevNameRandomizer.exe.config
+C:\Code\bball-randomizer\DevNameRandomizer\bin\Debug\DevNameRandomizer.exe
+C:\Code\bball-randomizer\DevNameRandomizer\bin\Debug\DevNameRandomizer.pdb
+C:\Code\bball-randomizer\DevNameRandomizer\obj\Debug\DevNameRandomizer.csprojResolveAssemblyReference.cache
+C:\Code\bball-randomizer\DevNameRandomizer\obj\Debug\DevNameRandomizer.csproj.CoreCompileInputs.cache
+C:\Code\bball-randomizer\DevNameRandomizer\obj\Debug\DevNameRandomizer.exe
+C:\Code\bball-randomizer\DevNameRandomizer\obj\Debug\DevNameRandomizer.pdb
