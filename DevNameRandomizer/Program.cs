@@ -5,10 +5,10 @@ using System.Threading;
 
 namespace DevRandomizer
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
+	class Program
+	{
+		static void Main(string[] args)
+		{
 			var howManyPlayers = "------------------------ How Many Players? -------------------------";
 			var whoIsPlaying = "------------------------ Who's Playin? -------------------------";
 			var randomizedOrder = "------------------------ Randomized Order -------------------------";
@@ -55,7 +55,7 @@ namespace DevRandomizer
 
 			Console.ReadLine();
 		}
-    }
+	}
 
 	public static class ThreadSafeRandom
 	{

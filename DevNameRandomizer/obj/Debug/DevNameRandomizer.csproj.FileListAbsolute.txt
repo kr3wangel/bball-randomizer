@@ -1,0 +1,6 @@
+c:\users\aherrera\documents\visual studio 2017\Projects\DevNameRandomizer\DevNameRandomizer\bin\Debug\DevNameRandomizer.exe.config
+c:\users\aherrera\documents\visual studio 2017\Projects\DevNameRandomizer\DevNameRandomizer\bin\Debug\DevNameRandomizer.exe
+c:\users\aherrera\documents\visual studio 2017\Projects\DevNameRandomizer\DevNameRandomizer\bin\Debug\DevNameRandomizer.pdb
+c:\users\aherrera\documents\visual studio 2017\Projects\DevNameRandomizer\DevNameRandomizer\obj\Debug\DevNameRandomizer.csproj.CoreCompileInputs.cache
+c:\users\aherrera\documents\visual studio 2017\Projects\DevNameRandomizer\DevNameRandomizer\obj\Debug\DevNameRandomizer.exe
+c:\users\aherrera\documents\visual studio 2017\Projects\DevNameRandomizer\DevNameRandomizer\obj\Debug\DevNameRandomizer.pdb
